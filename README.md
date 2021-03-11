@@ -1,25 +1,30 @@
-# Arduino-StreamDeck com Keypad
+# Arduino-ProgrammingDeck com Keypad
 
-O Arduino Stream Deck é um teclado de teclas macros para gerenciar lives.
-Materiais:
-  - Keypad(4x4 ou 4x3)
-  - Arduino(Leonardo ou Pro Micro)
+Projeto de um teclado para facilitar atividades de programação baseado no [StreamDeck criado pelo Project Juan](https://github.com/juansduarte02/Arduino-Streamdeck-Keypad).
+
+## Comandos disponíveis nesta versão (segundo as teclas no keypad):
+
+- 1 -
+- 2 -
+- 3 -
+- 4 -
+- 5 -
+- 6 -
+- 7 -
+- 8 -
+- 9 -
+- \* -
+- 0 -
+- \# -
+
+### Materiais utilizados
+
+- Teclado de Membrana 4X3;
+- Arduino Leonardo (IMPORTANTE: O projeto deve ser realizado com o Arduino Leonardo ou o Arduino Leonardo Pro-Micro pois o micro processador da placa precisa ser compatível com a biblioteca Keybord.h);
+- Jumpers macho-macho.
 
 ## Bibliotecas Usadas:
-    - Keyboard.h
-    - Keypad.h
 
-As bibliotecas estão na pasta lib no repositorio, a keyboard.h é padrão da IDE do arduino e a keypad deve ser inserida.
-
-O codigo já está adaptado tanto para keypads 4x4 e 4x3, basta tirar as barras para usar a 4x3, porem não se esqueça de aplicar as barras na 4x4
-
-Em caso de duvidas:
-
-[Instagram](https://www.instagram.com/project.juan/)
-                  
-
-License
-----
-
-MIT
-  
+- Keyboard.h
+- Keypad.h
+  As bibliotecas se encontram na pasta lib no repositorio.
