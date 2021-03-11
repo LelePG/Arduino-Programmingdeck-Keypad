@@ -13,9 +13,9 @@ Projeto de um teclado para automatizar a utilização de atalhos de teclado na I
 - 7 - Mostra sugestões de código;
 - 8 - Mostra sugestões de parâmetros de funções;
 - 9 -
-- \* -
+- \* - Fechar o VS Code;
 - 0 -
-- \# -
+- \# - Fechar a pasta em aberto.
 
 ### Materiais utilizados
 
