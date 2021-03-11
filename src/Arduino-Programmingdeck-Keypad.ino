@@ -17,8 +17,6 @@ byte colPins[COLS] = {6, 7, 8};
 
 Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
-void pressKey(char key);
-
 void setup()
 {
   Serial.begin(9600);
@@ -29,53 +27,66 @@ void loop()
 {
   char key = keypad.getKey();
 
-  if (key)
-  {
-    //Serial.println(key);//debug
-    switch (key)
-    {
-    case '1':
+  if (!key){
+    return;
+  }
+    
+  switch (key) {
+    case '1'://Select all occurencies of current selection
+      Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press(KEY_LEFT_ALT);
-      Keyboard.press('t');
+    Keyboard.press('l');
       break;
-    case '2':
-      Keyboard.write('&');
-      Keyboard.write('&');
+    case '2'://Move line up
+      Keyboard.press(KEY_LEFT_ALT);
+      Keyboard.press(KEY_UP_ARROW);
       break;
     case '3':
-
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('a'); 
       break;
-    case '4':
-
+    case '4'://outdent line
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('[');
       break;
-    case '5':
-
+    case '5':// Move line down
+      Keyboard.press(KEY_LEFT_ALT);
+      Keyboard.press(KEY_DOWN_ARROW);
       break;
-    case '6':
-
+    case '6'://indent line
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(']');
       break;
-    case '7':
-
+    case '7'://Trigger sugestions
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(' ');
       break;
-    case '8':
-
+    case '8'://Trigger parameter hints
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press(' ');
       break;
-    case '9':
-
+    case '9'://Toggle line comment
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('/');
       break;
-    case '0':
-
+    case '0'://Open integrated terminal
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press('`');
       break;
-    case '*':
-
+    case '*'://Close editor
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('w');
       break;
-    case '#':
-
+    case '#'://Close folder
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('k');
+      Keyboard.press('f');
       break;
-    }
-    delay(100);
-    Keyboard.releaseAll();
   }
+  delay(50);
+  Keyboard.releaseAll();
 }
 
