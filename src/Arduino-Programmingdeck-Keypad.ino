@@ -46,17 +46,17 @@ void loop()
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('a'); 
       break;
-    case '4'://outdent line MISCLIKING
+    case '4'://outdent line 
       //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('[');
+      Keyboard.press(']'); //MISCLICK
       break;
     case '5':// Move line down
       Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press(KEY_DOWN_ARROW);
       break;
-    case '6'://indent line MISCLIKING
+    case '6'://indent line 
       //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press(']');
+      Keyboard.press('['); //MISCLICK
       break;
     case '7'://Trigger sugestions
       Keyboard.press(KEY_LEFT_CTRL);
@@ -67,14 +67,14 @@ void loop()
       Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press(' ');
       break;
-    case '9'://Toggle line comment MISCLIKING
+    case '9'://Toggle line comment 
       //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('/');
+      Keyboard.write('/'); //MISCLICK
       break;
-    case '0'://Open integrated terminal MISCLIKING
+    case '0'://Open integrated terminal 
       //Keyboard.press(KEY_LEFT_CTRL);
       //Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press('`');
+      Keyboard.press('`'); //MISCLICK
       break;
     case '*'://Close VS Code 
       Keyboard.press(KEY_LEFT_CTRL);
