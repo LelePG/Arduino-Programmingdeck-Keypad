@@ -35,7 +35,7 @@ void loop()
     case '1'://Select all occurencies of current selection
       Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press(KEY_LEFT_CTRL);
-    Keyboard.press('l');
+      Keyboard.press('l');
       break;
     case '2'://Move line up
       Keyboard.press(KEY_LEFT_ALT);
@@ -46,7 +46,7 @@ void loop()
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('a'); 
       break;
-    case '4'://outdent line
+    case '4'://outdent line MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('[');
       break;
@@ -54,7 +54,7 @@ void loop()
       Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press(KEY_DOWN_ARROW);
       break;
-    case '6'://indent line
+    case '6'://indent line MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press(']');
       break;
@@ -67,20 +67,20 @@ void loop()
       Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press(' ');
       break;
-    case '9'://Toggle line comment
+    case '9'://Toggle line comment MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('/');
       break;
-    case '0'://Open integrated terminal
+    case '0'://Open integrated terminal MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press('`');
       break;
-    case '*'://Close editor
+    case '*'://Close editor MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('w');
       break;
-    case '#'://Close folder
+    case '#'://Close folder MISCLIKING
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('k');
       Keyboard.press('f');
