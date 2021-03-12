@@ -1,6 +1,8 @@
 # Arduino-ProgrammingDeck com Keypad
 
-Projeto de um teclado para automatizar a utilização de atalhos de teclado na IDE Visual Studio Code baseado no [StreamDeck criado pelo Project Juan](https://github.com/juansduarte02/Arduino-Streamdeck-Keypad).
+<center><img src = "imagens/capa.jpeg" width = 300></center>
+
+Projeto de um teclado para automatizar a utilização de atalhos de teclado na IDE Visual Studio Code baseado no [StreamDeck criado pelo Project Juan](https://github.com/juansduarte02/Arduino-Streamdeck-Keypad), com uma case criada em papelão.
 
 ## Comandos disponíveis nesta versão (segundo as teclas no keypad):
 
