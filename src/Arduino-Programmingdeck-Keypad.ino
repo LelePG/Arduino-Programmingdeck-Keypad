@@ -46,17 +46,19 @@ void loop()
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press('a'); 
       break;
-    case '4'://outdent line 
-      //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press(']'); //MISCLICK
+    case '4'://Delete current line
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press('k');
       break;
     case '5':// Move line down
       Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press(KEY_DOWN_ARROW);
       break;
-    case '6'://indent line 
-      //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('['); //MISCLICK
+    case '6'://Abre um terminal na pasta atual 
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press(KEY_LEFT_SHIFT);
+      Keyboard.press('c'); 
       break;
     case '7'://Trigger sugestions
       Keyboard.press(KEY_LEFT_CTRL);
@@ -67,14 +69,14 @@ void loop()
       Keyboard.press(KEY_LEFT_SHIFT);
       Keyboard.press(' ');
       break;
-    case '9'://Toggle line comment 
-      //Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.write('/'); //MISCLICK
+    case '9'://Open Keyboard shorcuts
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('k'); 
+      Keyboard.press('s');
       break;
-    case '0'://Open integrated terminal 
-      //Keyboard.press(KEY_LEFT_CTRL);
-      //Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press('`'); //MISCLICK
+    case '0'://Close open editor 
+      Keyboard.press(KEY_LEFT_CTRL);
+      Keyboard.press('w'); 
       break;
     case '*'://Close VS Code 
       Keyboard.press(KEY_LEFT_CTRL);

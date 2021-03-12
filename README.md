@@ -7,14 +7,14 @@ Projeto de um teclado para automatizar a utilização de atalhos de teclado na I
 - 1 - Seleciona todas as occorências de uma palavra ou seleção de palavras;
 - 2 - Move o código de uma linha para a linha superior;
 - 3 - Transforma uma seleção de código em um comentário em bloco;
-- 4 -
+- 4 - Deleta a linha atual;
 - 5 - Move o código de uma linha para a linha inferior;
-- 6 -
+- 6 - Abre um terminal da pasta atual do projeto;
 - 7 - Mostra sugestões de código;
 - 8 - Mostra sugestões de parâmetros de funções;
-- 9 -
+- 9 - Mostra todos os atalhos de teclado disponíveis na IDE;
 - \* - Fechar o VS Code;
-- 0 -
+- 0 - Fechar o editor aberto;
 - \# - Fechar a pasta em aberto.
 
 ### Materiais utilizados
@@ -28,4 +28,5 @@ Projeto de um teclado para automatizar a utilização de atalhos de teclado na I
 
 - Keyboard.h
 - Keypad.h
-  As bibliotecas se encontram na pasta lib no repositorio.
+
+As bibliotecas se encontram na pasta lib no repositorio.
